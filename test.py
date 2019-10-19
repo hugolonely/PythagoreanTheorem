@@ -34,15 +34,15 @@ while bool:
     else:
         nomSeg(desc, nomTri)
     try :
-        desc[0][0] = float(input("Longueur {} : ".format(desc[0][1])))
+        desc[0][0] = float(input("Longueur {} (Rien si vous cherchez cette longueur) : ".format(desc[0][1])))
     except :
         desc[0][0] = 0
     try :
-        desc[1][0] = float(input("Longueur {} : ".format(desc[1][1])))
+        desc[1][0] = float(input("Longueur {} (Rien si vous cherchez cette longueur) : ".format(desc[1][1])))
     except :
         desc[1][0] = 0
     try :
-        desc[2][0] = float(input("Longueur {} : ".format(desc[2][1])))
+        desc[2][0] = float(input("Longueur {} (Rien si vous cherchez cette longueur) : ".format(desc[2][1])))
     except :
         desc[2][0] = 0
     result = round(carre(desc[1][0])) + round(carre(desc[2][0]))
